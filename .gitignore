@@ -146,3 +146,8 @@ Thumbs.db
 
 # OpenClaw
 .openclaw/
+
+# Marketing/Promotion materials (keep local)
+SOCIAL_MEDIA_GUIDE.md
+LAUNCH_ANNOUNCEMENTS.md
+PROMOTION_PLAN.md

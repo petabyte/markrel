@@ -68,15 +68,46 @@ Follows [Semantic Versioning](https://semver.org/):
 - MINOR: New features, backwards compatible (v0.1.0, v0.2.0)
 - PATCH: Bug fixes (v0.1.1, v0.1.2)
 
-## PyPI Setup
+## PyPI Setup (Trusted Publishing)
 
-Before first release, create a PyPI API token:
+markrel uses PyPI's **trusted publishing** (OIDC) instead of API tokens. This is more secure:
 
-1. Go to https://pypi.org/manage/account/token/
-2. Generate token with "Upload to PyPI" scope
-3. Add to GitHub Secrets:
-   - Go to Settings → Secrets → Actions
-   - Create `PYPI_API_TOKEN`
+### One-Time Setup
+
+1. Go to https://pypi.org/manage/project/markrel/settings/publishing/
+2. Add a new GitHub publisher:
+   - **Owner**: `petabyte`
+   - **Repository**: `markrel`
+   - **Workflow**: `release.yml`
+   - **Environment**: (leave blank)
+
+3. The GitHub workflow already has the required permissions:
+   ```yaml
+   permissions:
+     contents: write
+     id-token: write
+   ```
+
+### How It Works
+
+When you push a tag (`v*`), GitHub Actions:
+1. Requests a short-lived OIDC token from GitHub
+2. Exchanges it for a PyPI upload token
+3. Uploads the package
+4. No secrets stored in GitHub!
+
+### Manual Release (if needed)
+
+```bash
+# Build
+python -m build
+
+# Test
+twine check dist/*
+
+# Upload to PyPI (requires PyPI token configured locally)
+twine upload dist/*
+```
 
 ---
 

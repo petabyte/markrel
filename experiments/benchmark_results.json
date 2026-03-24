@@ -1,0 +1,286 @@
+[
+  {
+    "name": "Cosine Only",
+    "config": {
+      "metrics": [
+        "cosine"
+      ],
+      "n_bins": 10
+    },
+    "metrics": {
+      "accuracy": 0.8,
+      "precision": 1.0,
+      "recall": 0.6774193548387096,
+      "f1": 0.8076923076923077,
+      "auc": 0.8387096774193548,
+      "train_time": 0.027396202087402344,
+      "pred_time": 0.005614280700683594,
+      "samples_per_sec": 17811.720740614914
+    },
+    "n_train": 400,
+    "n_test": 100
+  },
+  {
+    "name": "Jaccard Only",
+    "config": {
+      "metrics": [
+        "jaccard"
+      ],
+      "n_bins": 10
+    },
+    "metrics": {
+      "accuracy": 0.8,
+      "precision": 1.0,
+      "recall": 0.6774193548387096,
+      "f1": 0.8076923076923077,
+      "auc": 0.8387096774193548,
+      "train_time": 0.028818845748901367,
+      "pred_time": 0.006249904632568359,
+      "samples_per_sec": 16000.244144350347
+    },
+    "n_train": 400,
+    "n_test": 100
+  },
+  {
+    "name": "Euclidean Only",
+    "config": {
+      "metrics": [
+        "euclidean"
+      ],
+      "n_bins": 10
+    },
+    "metrics": {
+      "accuracy": 0.8,
+      "precision": 1.0,
+      "recall": 0.6774193548387096,
+      "f1": 0.8076923076923077,
+      "auc": 0.8387096774193548,
+      "train_time": 0.021179914474487305,
+      "pred_time": 0.004634857177734375,
+      "samples_per_sec": 21575.637860082305
+    },
+    "n_train": 400,
+    "n_test": 100
+  },
+  {
+    "name": "Cosine + Jaccard",
+    "config": {
+      "metrics": [
+        "cosine",
+        "jaccard"
+      ],
+      "n_bins": 10
+    },
+    "metrics": {
+      "accuracy": 0.8,
+      "precision": 1.0,
+      "recall": 0.6774193548387096,
+      "f1": 0.8076923076923077,
+      "auc": 0.8387096774193548,
+      "train_time": 0.03489065170288086,
+      "pred_time": 0.008002996444702148,
+      "samples_per_sec": 12495.319808144905
+    },
+    "n_train": 400,
+    "n_test": 100
+  },
+  {
+    "name": "Cosine + Jaccard + Overlap",
+    "config": {
+      "metrics": [
+        "cosine",
+        "jaccard",
+        "overlap"
+      ],
+      "n_bins": 10
+    },
+    "metrics": {
+      "accuracy": 0.8,
+      "precision": 1.0,
+      "recall": 0.6774193548387096,
+      "f1": 0.8076923076923077,
+      "auc": 0.8387096774193548,
+      "train_time": 0.04529070854187012,
+      "pred_time": 0.010869979858398438,
+      "samples_per_sec": 9199.649061238813
+    },
+    "n_train": 400,
+    "n_test": 100
+  },
+  {
+    "name": "Uniform (5 bins)",
+    "config": {
+      "metrics": [
+        "cosine"
+      ],
+      "n_bins": 5,
+      "bin_strategy": "uniform"
+    },
+    "metrics": {
+      "accuracy": 0.78,
+      "precision": 1.0,
+      "recall": 0.6451612903225806,
+      "f1": 0.7843137254901961,
+      "auc": 0.8225806451612903,
+      "train_time": 0.02367544174194336,
+      "pred_time": 0.005317211151123047,
+      "samples_per_sec": 18806.851403461573
+    },
+    "n_train": 400,
+    "n_test": 100
+  },
+  {
+    "name": "Uniform (10 bins)",
+    "config": {
+      "metrics": [
+        "cosine"
+      ],
+      "n_bins": 10,
+      "bin_strategy": "uniform"
+    },
+    "metrics": {
+      "accuracy": 0.8,
+      "precision": 1.0,
+      "recall": 0.6774193548387096,
+      "f1": 0.8076923076923077,
+      "auc": 0.8387096774193548,
+      "train_time": 0.024187088012695312,
+      "pred_time": 0.005553007125854492,
+      "samples_per_sec": 18008.26070155854
+    },
+    "n_train": 400,
+    "n_test": 100
+  },
+  {
+    "name": "Uniform (20 bins)",
+    "config": {
+      "metrics": [
+        "cosine"
+      ],
+      "n_bins": 20,
+      "bin_strategy": "uniform"
+    },
+    "metrics": {
+      "accuracy": 0.8,
+      "precision": 1.0,
+      "recall": 0.6774193548387096,
+      "f1": 0.8076923076923077,
+      "auc": 0.8387096774193548,
+      "train_time": 0.025490283966064453,
+      "pred_time": 0.0055005550384521484,
+      "samples_per_sec": 18179.983529105804
+    },
+    "n_train": 400,
+    "n_test": 100
+  },
+  {
+    "name": "Quantile (5 bins)",
+    "config": {
+      "metrics": [
+        "cosine"
+      ],
+      "n_bins": 5,
+      "bin_strategy": "quantile"
+    },
+    "metrics": {
+      "accuracy": 0.59,
+      "precision": 1.0,
+      "recall": 0.3387096774193548,
+      "f1": 0.5060240963855421,
+      "auc": 0.6693548387096774,
+      "train_time": 0.02560138702392578,
+      "pred_time": 0.0051233768463134766,
+      "samples_per_sec": 19518.376843966682
+    },
+    "n_train": 400,
+    "n_test": 100
+  },
+  {
+    "name": "Quantile (10 bins)",
+    "config": {
+      "metrics": [
+        "cosine"
+      ],
+      "n_bins": 10,
+      "bin_strategy": "quantile"
+    },
+    "metrics": {
+      "accuracy": 0.75,
+      "precision": 1.0,
+      "recall": 0.5967741935483871,
+      "f1": 0.7474747474747475,
+      "auc": 0.7983870967741935,
+      "train_time": 0.02570796012878418,
+      "pred_time": 0.005601167678833008,
+      "samples_per_sec": 17853.42016770953
+    },
+    "n_train": 400,
+    "n_test": 100
+  },
+  {
+    "name": "Quantile (20 bins)",
+    "config": {
+      "metrics": [
+        "cosine"
+      ],
+      "n_bins": 20,
+      "bin_strategy": "quantile"
+    },
+    "metrics": {
+      "accuracy": 0.79,
+      "precision": 1.0,
+      "recall": 0.6612903225806451,
+      "f1": 0.7961165048543689,
+      "auc": 0.8306451612903225,
+      "train_time": 0.025480031967163086,
+      "pred_time": 0.005608797073364258,
+      "samples_per_sec": 17829.134962805525
+    },
+    "n_train": 400,
+    "n_test": 100
+  },
+  {
+    "name": "Mean Combination",
+    "config": {
+      "metrics": [
+        "cosine",
+        "jaccard"
+      ],
+      "combine_rule": "mean"
+    },
+    "metrics": {
+      "accuracy": 0.8,
+      "precision": 1.0,
+      "recall": 0.6774193548387096,
+      "f1": 0.8076923076923077,
+      "auc": 0.8387096774193548,
+      "train_time": 0.03439640998840332,
+      "pred_time": 0.0077860355377197266,
+      "samples_per_sec": 12843.50675199804
+    },
+    "n_train": 400,
+    "n_test": 100
+  },
+  {
+    "name": "Bayesian Combination",
+    "config": {
+      "metrics": [
+        "cosine",
+        "jaccard"
+      ],
+      "combine_rule": "bayesian"
+    },
+    "metrics": {
+      "accuracy": 0.8,
+      "precision": 1.0,
+      "recall": 0.6774193548387096,
+      "f1": 0.8076923076923077,
+      "auc": 0.8387096774193548,
+      "train_time": 0.034287452697753906,
+      "pred_time": 0.007643222808837891,
+      "samples_per_sec": 13083.4861812964
+    },
+    "n_train": 400,
+    "n_test": 100
+  }
+]

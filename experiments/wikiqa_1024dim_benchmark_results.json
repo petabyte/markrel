@@ -1,0 +1,100 @@
+[
+  {
+    "name": "markrel (Cosine only)",
+    "config": {
+      "name": "markrel (Cosine only)",
+      "metrics": [
+        "cosine"
+      ],
+      "n_bins": 10,
+      "bin_strategy": "uniform"
+    },
+    "embedding_model": "sentence-transformers/all-roberta-large-v1",
+    "embedding_dim": 1024,
+    "threshold": 0.081,
+    "accuracy": 0.9068937550689375,
+    "precision": 0.24684684684684685,
+    "recall": 0.46757679180887374,
+    "f1": 0.3231132075471698,
+    "auc": 0.8279083473602961,
+    "avg_precision": 0.2226332986316818,
+    "train_time": 0.4257776737213135,
+    "pred_time": 0.11373448371887207,
+    "throughput": 54205.19615878852
+  },
+  {
+    "name": "markrel (Cosine + Euclidean)",
+    "config": {
+      "name": "markrel (Cosine + Euclidean)",
+      "metrics": [
+        "cosine",
+        "euclidean"
+      ],
+      "n_bins": 10,
+      "bin_strategy": "uniform"
+    },
+    "embedding_model": "sentence-transformers/all-roberta-large-v1",
+    "embedding_dim": 1024,
+    "threshold": 0.007,
+    "accuracy": 0.897323600973236,
+    "precision": 0.23684210526315788,
+    "recall": 0.5221843003412969,
+    "f1": 0.3258785942492013,
+    "auc": 0.8323378839590445,
+    "avg_precision": 0.2392826432027859,
+    "train_time": 0.612271785736084,
+    "pred_time": 0.16381311416625977,
+    "throughput": 37634.34955361951
+  },
+  {
+    "name": "markrel (Cosine + Jaccard)",
+    "config": {
+      "name": "markrel (Cosine + Jaccard)",
+      "metrics": [
+        "cosine",
+        "jaccard"
+      ],
+      "n_bins": 10,
+      "bin_strategy": "uniform"
+    },
+    "embedding_model": "sentence-transformers/all-roberta-large-v1",
+    "embedding_dim": 1024,
+    "threshold": 0.035,
+    "accuracy": 0.9093268450932684,
+    "precision": 0.2527881040892193,
+    "recall": 0.4641638225255973,
+    "f1": 0.32731648616125153,
+    "auc": 0.8312352949382038,
+    "avg_precision": 0.24740549030071324,
+    "train_time": 1.0108582973480225,
+    "pred_time": 0.25754284858703613,
+    "throughput": 23937.76427426813
+  },
+  {
+    "name": "markrel (All metrics)",
+    "config": {
+      "name": "markrel (All metrics)",
+      "metrics": [
+        "cosine",
+        "euclidean",
+        "jaccard",
+        "overlap",
+        "dice"
+      ],
+      "n_bins": 10,
+      "bin_strategy": "uniform"
+    },
+    "embedding_model": "sentence-transformers/all-roberta-large-v1",
+    "embedding_dim": 1024,
+    "threshold": 0.001,
+    "accuracy": 0.9364152473641525,
+    "precision": 0.3238434163701068,
+    "recall": 0.310580204778157,
+    "f1": 0.3170731707317073,
+    "auc": 0.8323832197226846,
+    "avg_precision": 0.2576914060105096,
+    "train_time": 2.617441177368164,
+    "pred_time": 0.7193059921264648,
+    "throughput": 8570.761355365019
+  }
+]

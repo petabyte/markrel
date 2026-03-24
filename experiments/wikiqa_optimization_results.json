@@ -1,0 +1,34 @@
+[
+  {
+    "model": "MiniLM",
+    "embedding": "sentence-transformers/all-MiniLM-L6-v2",
+    "dim": 384,
+    "MAP": 0.28350296980826195,
+    "MRR": 0.28870165584225616,
+    "Recall@1": 0.5606995884773662,
+    "Recall@5": 0.9344993141289437,
+    "Recall@10": 0.9845679012345679
+  },
+  {
+    "model": "MPNet",
+    "embedding": "sentence-transformers/all-mpnet-base-v2",
+    "dim": 768,
+    "MAP": 0.29249071382365227,
+    "MRR": 0.29748803504727683,
+    "Recall@1": 0.5829903978052126,
+    "Recall@5": 0.9499314128943758,
+    "Recall@10": 0.9886831275720165
+  },
+  {
+    "model": "BGE-Large",
+    "embedding": "BAAI/bge-large-en",
+    "dim": 1024,
+    "MAP": 0.2619428458587228,
+    "MRR": 0.2662892750570477,
+    "Recall@1": 0.4722222222222222,
+    "Recall@5": 0.9163237311385459,
+    "Recall@10": 0.9866255144032922,
+    "best_MAP": 0.26722614310954146,
+    "best_MRR": 0.2689953301920126
+  }
+]

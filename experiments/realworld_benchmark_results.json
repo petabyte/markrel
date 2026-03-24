@@ -1,0 +1,95 @@
+{
+  "markrel": [
+    {
+      "name": "markrel (Cosine)",
+      "config": "{'metrics': ['cosine'], 'n_bins': 10, 'bin_strategy': 'uniform'}",
+      "accuracy": 0.6644295302013423,
+      "precision": 0.4444444444444444,
+      "recall": 0.08163265306122448,
+      "f1": 0.13793103448275862,
+      "auc_roc": 0.5668112244897959,
+      "avg_precision": 0.38334229555466376,
+      "train_time": 0.3772556781768799,
+      "pred_time": 0.07622861862182617,
+      "throughput": 3909.2929320730877
+    },
+    {
+      "name": "markrel (Cosine + Jaccard)",
+      "config": "{'metrics': ['cosine', 'jaccard'], 'n_bins': 10, 'bin_strategy': 'uniform'}",
+      "accuracy": 0.6845637583892618,
+      "precision": 0.7,
+      "recall": 0.07142857142857142,
+      "f1": 0.12962962962962962,
+      "auc_roc": 0.5955867346938775,
+      "avg_precision": 0.45779853097952017,
+      "train_time": 0.42940545082092285,
+      "pred_time": 0.08152031898498535,
+      "throughput": 3655.5303476534054
+    },
+    {
+      "name": "markrel (All metrics)",
+      "config": "{'metrics': ['cosine', 'jaccard', 'overlap', 'dice', 'euclidean'], 'n_bins': 10, 'bin_strategy': 'uniform'}",
+      "accuracy": 0.674496644295302,
+      "precision": 1.0,
+      "recall": 0.01020408163265306,
+      "f1": 0.020202020202020204,
+      "auc_roc": 0.593469387755102,
+      "avg_precision": 0.4654334250863861,
+      "train_time": 0.6003477573394775,
+      "pred_time": 0.11712121963500977,
+      "throughput": 2544.3724111537695
+    },
+    {
+      "name": "markrel (5 bins)",
+      "config": "{'metrics': ['cosine', 'jaccard'], 'n_bins': 5, 'bin_strategy': 'uniform'}",
+      "accuracy": 0.6845637583892618,
+      "precision": 1.0,
+      "recall": 0.04081632653061224,
+      "f1": 0.07843137254901959,
+      "auc_roc": 0.6084693877551021,
+      "avg_precision": 0.4806703791061712,
+      "train_time": 0.42603278160095215,
+      "pred_time": 0.08108305931091309,
+      "throughput": 3675.2436641212394
+    },
+    {
+      "name": "markrel (20 bins)",
+      "config": "{'metrics': ['cosine', 'jaccard'], 'n_bins': 20, 'bin_strategy': 'uniform'}",
+      "accuracy": 0.6946308724832215,
+      "precision": 0.8181818181818182,
+      "recall": 0.09183673469387756,
+      "f1": 0.1651376146788991,
+      "auc_roc": 0.5983928571428572,
+      "avg_precision": 0.4922331333384907,
+      "train_time": 0.42052364349365234,
+      "pred_time": 0.08112120628356934,
+      "throughput": 3673.5153932290364
+    },
+    {
+      "name": "markrel (Quantile)",
+      "config": "{'metrics': ['cosine', 'jaccard'], 'n_bins': 10, 'bin_strategy': 'quantile'}",
+      "accuracy": 0.6711409395973155,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "auc_roc": 0.5732908163265306,
+      "avg_precision": 0.42668626883590977,
+      "train_time": 0.42972517013549805,
+      "pred_time": 0.07837700843811035,
+      "throughput": 3802.1354213246454
+    }
+  ],
+  "baseline": {
+    "name": "TF-IDF + Logistic Regression",
+    "config": "sklearn baseline",
+    "accuracy": 0.674496644295302,
+    "precision": 1.0,
+    "recall": 0.01020408163265306,
+    "f1": 0.020202020202020204,
+    "auc_roc": 0.4915816326530612,
+    "avg_precision": 0.3295572425288674,
+    "train_time": 0.12479972839355469,
+    "pred_time": 0.020191669464111328,
+    "throughput": 14758.56171921124
+  }
+}

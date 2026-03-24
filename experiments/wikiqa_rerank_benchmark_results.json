@@ -1,0 +1,35 @@
+[
+  {
+    "name": "markrel Re-rank (Cosine) - Balanced",
+    "config": "{'metrics': ['cosine'], 'n_bins': 10}",
+    "initial_k": 20,
+    "MAP": 0.27686792989971143,
+    "MRR": 0.282223729610125,
+    "Recall@1": 0.5397805212620027,
+    "Recall@5": 0.9324417009602194,
+    "Recall@10": 0.9794238683127572,
+    "train_time": 0.03992891311645508
+  },
+  {
+    "name": "markrel Re-rank (Cosine) - Balanced, k=50",
+    "config": "{'metrics': ['cosine'], 'n_bins': 10}",
+    "initial_k": 50,
+    "MAP": 0.27687299329340037,
+    "MRR": 0.282228793003814,
+    "Recall@1": 0.5397805212620027,
+    "Recall@5": 0.9324417009602194,
+    "Recall@10": 0.9794238683127572,
+    "train_time": 0.04011130332946777
+  },
+  {
+    "name": "markrel Re-rank (Cosine + Jaccard) - Balanced",
+    "config": "{'metrics': ['cosine', 'jaccard'], 'n_bins': 10}",
+    "initial_k": 20,
+    "MAP": 0.2717096666253343,
+    "MRR": 0.2775414406861299,
+    "Recall@1": 0.527434842249657,
+    "Recall@5": 0.9283264746227708,
+    "Recall@10": 0.9794238683127572,
+    "train_time": 0.09495043754577637
+  }
+]

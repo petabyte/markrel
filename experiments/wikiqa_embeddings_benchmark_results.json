@@ -1,0 +1,54 @@
+[
+  {
+    "name": "markrel (Cosine)",
+    "config": "{'metrics': ['cosine'], 'n_bins': 10}",
+    "threshold": 0.13,
+    "accuracy": 0.9372262773722628,
+    "precision": 0.33093525179856115,
+    "recall": 0.31399317406143346,
+    "f1": 0.3222416812609457,
+    "auc": 0.7988940398582735,
+    "train_time": 0.3593573570251465,
+    "pred_time": 0.09625864028930664,
+    "throughput": 64046.198673397106
+  },
+  {
+    "name": "markrel (Cosine + Jaccard)",
+    "config": "{'metrics': ['cosine', 'jaccard'], 'n_bins': 10}",
+    "threshold": 0.04,
+    "accuracy": 0.9362530413625304,
+    "precision": 0.3263888888888889,
+    "recall": 0.32081911262798635,
+    "f1": 0.3235800344234079,
+    "auc": 0.7986240595735185,
+    "train_time": 0.8471705913543701,
+    "pred_time": 0.23923182487487793,
+    "throughput": 25769.982748843693
+  },
+  {
+    "name": "markrel (Cosine + Euclidean)",
+    "config": "{'metrics': ['cosine', 'euclidean'], 'n_bins': 10}",
+    "threshold": 0.06999999999999999,
+    "accuracy": 0.9372262773722628,
+    "precision": 0.33093525179856115,
+    "recall": 0.31399317406143346,
+    "f1": 0.3222416812609457,
+    "auc": 0.799629874175819,
+    "train_time": 0.5572307109832764,
+    "pred_time": 0.15469026565551758,
+    "throughput": 39853.83290845815
+  },
+  {
+    "name": "markrel (All metrics)",
+    "config": "{'metrics': ['cosine', 'euclidean', 'jaccard', 'overlap', 'dice'], 'n_bins': 10}",
+    "threshold": 0.01,
+    "accuracy": 0.9495539334955393,
+    "precision": 0.41964285714285715,
+    "recall": 0.16040955631399317,
+    "f1": 0.23209876543209873,
+    "auc": 0.796248000576578,
+    "train_time": 2.353123188018799,
+    "pred_time": 0.6575865745544434,
+    "throughput": 9375.191402253276
+  }
+]

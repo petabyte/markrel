@@ -1,0 +1,22 @@
+[
+  {
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "embedding_dim": 384,
+    "MAP": 0.28350296980826195,
+    "MRR": 0.28870165584225616,
+    "Recall@1": 0.5606995884773662,
+    "Recall@5": 0.9344993141289437,
+    "Recall@10": 0.9845679012345679,
+    "train_time": 0.34522461891174316
+  },
+  {
+    "embedding_model": "sentence-transformers/all-mpnet-base-v2",
+    "embedding_dim": 768,
+    "MAP": 0.29249071382365227,
+    "MRR": 0.29748803504727683,
+    "Recall@1": 0.5829903978052126,
+    "Recall@5": 0.9499314128943758,
+    "Recall@10": 0.9886831275720165,
+    "train_time": 0.4169490337371826
+  }
+]

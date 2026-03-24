@@ -1,0 +1,38 @@
+[
+  {
+    "name": "markrel (Cosine)",
+    "config": "{'metrics': ['cosine'], 'n_bins': 10}",
+    "accuracy": 0.9524736415247365,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "auc": 0.6222589299829816,
+    "train_time": 4.523279428482056,
+    "pred_time": 0.9492886066436768,
+    "throughput": 6494.336871688678
+  },
+  {
+    "name": "markrel (Cosine + Jaccard)",
+    "config": "{'metrics': ['cosine', 'jaccard'], 'n_bins': 10}",
+    "accuracy": 0.9524736415247365,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "auc": 0.6284182003329273,
+    "train_time": 5.507721662521362,
+    "pred_time": 1.2326509952545166,
+    "throughput": 5001.415667317136
+  },
+  {
+    "name": "markrel (All metrics)",
+    "config": "{'metrics': ['cosine', 'jaccard', 'overlap', 'dice'], 'n_bins': 10}",
+    "accuracy": 0.9524736415247365,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "auc": 0.6594647706242852,
+    "train_time": 7.713862180709839,
+    "pred_time": 1.884526252746582,
+    "throughput": 3271.3792079122745
+  }
+]

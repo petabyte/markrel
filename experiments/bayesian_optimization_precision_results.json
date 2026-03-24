@@ -1,0 +1,1326 @@
+{
+  "best_params": {
+    "n_bins": 24,
+    "bin_strategy": "uniform",
+    "use_cosine": true,
+    "use_euclidean": true,
+    "use_jaccard": false,
+    "use_overlap": false,
+    "use_dice": false
+  },
+  "best_score": 0.995,
+  "metrics": {
+    "f1": 0.006802721088435374,
+    "auc": 0.824121648640857,
+    "precision": 1.0,
+    "recall": 0.0034129692832764505,
+    "accuracy": 0.9526358475263584,
+    "avg_precision": 0.25681493027743296,
+    "threshold": 0.669
+  },
+  "n_trials": 100,
+  "optimization_time": 217.82966566085815,
+  "target": "precision",
+  "all_trials": [
+    {
+      "number": 0,
+      "value": 0.5133333333333333,
+      "params": {
+        "n_bins": 11,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": true,
+        "use_dice": true
+      }
+    },
+    {
+      "number": 1,
+      "value": 0.24412280701754385,
+      "params": {
+        "n_bins": 8,
+        "bin_strategy": "quantile",
+        "use_cosine": false,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": false
+      }
+    },
+    {
+      "number": 2,
+      "value": 0.22152757078986587,
+      "params": {
+        "n_bins": 7,
+        "bin_strategy": "quantile",
+        "use_cosine": false,
+        "use_euclidean": true,
+        "use_jaccard": false,
+        "use_overlap": true,
+        "use_dice": false
+      }
+    },
+    {
+      "number": 3,
+      "value": 0.2767258883248731,
+      "params": {
+        "n_bins": 13,
+        "bin_strategy": "quantile",
+        "use_cosine": false,
+        "use_euclidean": false,
+        "use_jaccard": false,
+        "use_overlap": true,
+        "use_dice": true
+      }
+    },
+    {
+      "number": 4,
+      "value": 0.59,
+      "params": {
+        "n_bins": 44,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": false,
+        "use_overlap": false,
+        "use_dice": true
+      }
+    },
+    {
+      "number": 5,
+      "value": 0.35829588014981273,
+      "params": {
+        "n_bins": 17,
+        "bin_strategy": "quantile",
+        "use_cosine": false,
+        "use_euclidean": true,
+        "use_jaccard": false,
+        "use_overlap": false,
+        "use_dice": true
+      }
+    },
+    {
+      "number": 6,
+      "value": 0.2753970223325062,
+      "params": {
+        "n_bins": 11,
+        "bin_strategy": "quantile",
+        "use_cosine": true,
+        "use_euclidean": false,
+        "use_jaccard": false,
+        "use_overlap": false,
+        "use_dice": true
+      }
+    },
+    {
+      "number": 7,
+      "value": 0.5505555555555556,
+      "params": {
+        "n_bins": 25,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": false,
+        "use_overlap": false,
+        "use_dice": false
+      }
+    },
+    {
+      "number": 8,
+      "value": 0.4025874125874126,
+      "params": {
+        "n_bins": 40,
+        "bin_strategy": "quantile",
+        "use_cosine": true,
+        "use_euclidean": false,
+        "use_jaccard": false,
+        "use_overlap": true,
+        "use_dice": true
+      }
+    },
+    {
+      "number": 9,
+      "value": 0.45528455284552843,
+      "params": {
+        "n_bins": 7,
+        "bin_strategy": "uniform",
+        "use_cosine": false,
+        "use_euclidean": true,
+        "use_jaccard": false,
+        "use_overlap": false,
+        "use_dice": false
+      }
+    },
+    {
+      "number": 10,
+      "value": 0.49,
+      "params": {
+        "n_bins": 48,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": false,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": true
+      }
+    },
+    {
+      "number": 11,
+      "value": 0.5188095238095238,
+      "params": {
+        "n_bins": 29,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": false,
+        "use_overlap": false,
+        "use_dice": false
+      }
+    },
+    {
+      "number": 12,
+      "value": 0.5505555555555556,
+      "params": {
+        "n_bins": 25,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": false,
+        "use_overlap": false,
+        "use_dice": false
+      }
+    },
+    {
+      "number": 13,
+      "value": 0.995,
+      "params": {
+        "n_bins": 24,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": false,
+        "use_overlap": false,
+        "use_dice": false
+      }
+    },
+    {
+      "number": 14,
+      "value": 0.6516666666666666,
+      "params": {
+        "n_bins": 35,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": true
+      }
+    },
+    {
+      "number": 15,
+      "value": 0.99,
+      "params": {
+        "n_bins": 21,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": false
+      }
+    },
+    {
+      "number": 16,
+      "value": 0.7042857142857143,
+      "params": {
+        "n_bins": 19,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": false
+      }
+    },
+    {
+      "number": 17,
+      "value": 0.49,
+      "params": {
+        "n_bins": 20,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": false
+      }
+    },
+    {
+      "number": 18,
+      "value": 0.4483333333333333,
+      "params": {
+        "n_bins": 5,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": false,
+        "use_jaccard": true,
+        "use_overlap": true,
+        "use_dice": false
+      }
+    },
+    {
+      "number": 19,
+      "value": 0.49,
+      "params": {
+        "n_bins": 14,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": false
+      }
+    },
+    {
+      "number": 20,
+      "value": 0.615,
+      "params": {
+        "n_bins": 31,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": false
+      }
+    },
+    {
+      "number": 21,
+      "value": 0.7042857142857143,
+      "params": {
+        "n_bins": 19,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": false
+      }
+    },
+    {
+      "number": 22,
+      "value": 0.49,
+      "params": {
+        "n_bins": 23,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": false
+      }
+    },
+    {
+      "number": 23,
+      "value": 0.6566666666666666,
+      "params": {
+        "n_bins": 16,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": false
+      }
+    },
+    {
+      "number": 24,
+      "value": 0.99,
+      "params": {
+        "n_bins": 21,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": false
+      }
+    },
+    {
+      "number": 25,
+      "value": 0.49,
+      "params": {
+        "n_bins": 29,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": false
+      }
+    },
+    {
+      "number": 26,
+      "value": 0.495,
+      "params": {
+        "n_bins": 22,
+        "bin_strategy": "uniform",
+        "use_cosine": false,
+        "use_euclidean": false,
+        "use_jaccard": true,
+        "use_overlap": true,
+        "use_dice": false
+      }
+    },
+    {
+      "number": 27,
+      "value": 0.49,
+      "params": {
+        "n_bins": 35,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": false
+      }
+    },
+    {
+      "number": 28,
+      "value": 0.5111290322580645,
+      "params": {
+        "n_bins": 11,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": false,
+        "use_overlap": false,
+        "use_dice": false
+      }
+    },
+    {
+      "number": 29,
+      "value": 0.5683333333333334,
+      "params": {
+        "n_bins": 16,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": true,
+        "use_dice": false
+      }
+    },
+    {
+      "number": 30,
+      "value": 0.79,
+      "params": {
+        "n_bins": 25,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": false
+      }
+    },
+    {
+      "number": 31,
+      "value": 0.6566666666666666,
+      "params": {
+        "n_bins": 27,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": false
+      }
+    },
+    {
+      "number": 32,
+      "value": 0.99,
+      "params": {
+        "n_bins": 21,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": false
+      }
+    },
+    {
+      "number": 33,
+      "value": 0.615,
+      "params": {
+        "n_bins": 13,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": false
+      }
+    },
+    {
+      "number": 34,
+      "value": 0.37681818181818183,
+      "params": {
+        "n_bins": 20,
+        "bin_strategy": "quantile",
+        "use_cosine": false,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": false
+      }
+    },
+    {
+      "number": 35,
+      "value": 0.6849999999999999,
+      "params": {
+        "n_bins": 9,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": true,
+        "use_dice": false
+      }
+    },
+    {
+      "number": 36,
+      "value": 0.3956043956043956,
+      "params": {
+        "n_bins": 34,
+        "bin_strategy": "quantile",
+        "use_cosine": false,
+        "use_euclidean": true,
+        "use_jaccard": false,
+        "use_overlap": false,
+        "use_dice": false
+      }
+    },
+    {
+      "number": 37,
+      "value": 0.5263157894736842,
+      "params": {
+        "n_bins": 18,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": false,
+        "use_jaccard": false,
+        "use_overlap": false,
+        "use_dice": false
+      }
+    },
+    {
+      "number": 38,
+      "value": 0.3182674772036474,
+      "params": {
+        "n_bins": 14,
+        "bin_strategy": "quantile",
+        "use_cosine": false,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": true
+      }
+    },
+    {
+      "number": 39,
+      "value": 0.49,
+      "params": {
+        "n_bins": 22,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": false,
+        "use_overlap": true,
+        "use_dice": false
+      }
+    },
+    {
+      "number": 40,
+      "value": 0.28911764705882353,
+      "params": {
+        "n_bins": 12,
+        "bin_strategy": "quantile",
+        "use_cosine": true,
+        "use_euclidean": false,
+        "use_jaccard": false,
+        "use_overlap": false,
+        "use_dice": true
+      }
+    },
+    {
+      "number": 41,
+      "value": 0.79,
+      "params": {
+        "n_bins": 25,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": false
+      }
+    },
+    {
+      "number": 42,
+      "value": 0.6566666666666666,
+      "params": {
+        "n_bins": 22,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": false
+      }
+    },
+    {
+      "number": 43,
+      "value": 0.6566666666666666,
+      "params": {
+        "n_bins": 27,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": false
+      }
+    },
+    {
+      "number": 44,
+      "value": 0.49,
+      "params": {
+        "n_bins": 17,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": false
+      }
+    },
+    {
+      "number": 45,
+      "value": 0.69,
+      "params": {
+        "n_bins": 24,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": false
+      }
+    },
+    {
+      "number": 46,
+      "value": 0.6263636363636363,
+      "params": {
+        "n_bins": 38,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": false,
+        "use_overlap": false,
+        "use_dice": true
+      }
+    },
+    {
+      "number": 47,
+      "value": 0.7092857142857143,
+      "params": {
+        "n_bins": 30,
+        "bin_strategy": "uniform",
+        "use_cosine": false,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": false
+      }
+    },
+    {
+      "number": 48,
+      "value": 0.37362637362637363,
+      "params": {
+        "n_bins": 21,
+        "bin_strategy": "quantile",
+        "use_cosine": true,
+        "use_euclidean": false,
+        "use_jaccard": false,
+        "use_overlap": false,
+        "use_dice": false
+      }
+    },
+    {
+      "number": 49,
+      "value": 0.6516666666666666,
+      "params": {
+        "n_bins": 27,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": true,
+        "use_dice": false
+      }
+    },
+    {
+      "number": 50,
+      "value": 0.985,
+      "params": {
+        "n_bins": 45,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": true
+      }
+    },
+    {
+      "number": 51,
+      "value": 0.985,
+      "params": {
+        "n_bins": 49,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": true
+      }
+    },
+    {
+      "number": 52,
+      "value": 0.985,
+      "params": {
+        "n_bins": 45,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": true
+      }
+    },
+    {
+      "number": 53,
+      "value": 0.61,
+      "params": {
+        "n_bins": 47,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": true
+      }
+    },
+    {
+      "number": 54,
+      "value": 0.985,
+      "params": {
+        "n_bins": 41,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": true
+      }
+    },
+    {
+      "number": 55,
+      "value": 0.6003846153846154,
+      "params": {
+        "n_bins": 50,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": true
+      }
+    },
+    {
+      "number": 56,
+      "value": 0.8183333333333334,
+      "params": {
+        "n_bins": 42,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": true
+      }
+    },
+    {
+      "number": 57,
+      "value": 0.6566666666666666,
+      "params": {
+        "n_bins": 33,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": false,
+        "use_overlap": false,
+        "use_dice": true
+      }
+    },
+    {
+      "number": 58,
+      "value": 0.6566666666666666,
+      "params": {
+        "n_bins": 37,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": false,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": true
+      }
+    },
+    {
+      "number": 59,
+      "value": 0.6263636363636363,
+      "params": {
+        "n_bins": 18,
+        "bin_strategy": "uniform",
+        "use_cosine": false,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": true
+      }
+    },
+    {
+      "number": 60,
+      "value": 0.4445454545454545,
+      "params": {
+        "n_bins": 5,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": false,
+        "use_overlap": false,
+        "use_dice": true
+      }
+    },
+    {
+      "number": 61,
+      "value": 0.985,
+      "params": {
+        "n_bins": 45,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": true
+      }
+    },
+    {
+      "number": 62,
+      "value": 0.5564285714285714,
+      "params": {
+        "n_bins": 44,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": true
+      }
+    },
+    {
+      "number": 63,
+      "value": 0.6003846153846154,
+      "params": {
+        "n_bins": 50,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": true
+      }
+    },
+    {
+      "number": 64,
+      "value": 0.5304545454545454,
+      "params": {
+        "n_bins": 32,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": true
+      }
+    },
+    {
+      "number": 65,
+      "value": 0.6516666666666666,
+      "params": {
+        "n_bins": 38,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": true
+      }
+    },
+    {
+      "number": 66,
+      "value": 0.98,
+      "params": {
+        "n_bins": 15,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": true,
+        "use_dice": true
+      }
+    },
+    {
+      "number": 67,
+      "value": 0.985,
+      "params": {
+        "n_bins": 45,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": true
+      }
+    },
+    {
+      "number": 68,
+      "value": 0.3718181818181818,
+      "params": {
+        "n_bins": 20,
+        "bin_strategy": "quantile",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": false
+      }
+    },
+    {
+      "number": 69,
+      "value": 0.61,
+      "params": {
+        "n_bins": 40,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": true
+      }
+    },
+    {
+      "number": 70,
+      "value": 0.45544554455445546,
+      "params": {
+        "n_bins": 28,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": false,
+        "use_jaccard": false,
+        "use_overlap": false,
+        "use_dice": false
+      }
+    },
+    {
+      "number": 71,
+      "value": 0.985,
+      "params": {
+        "n_bins": 41,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": true
+      }
+    },
+    {
+      "number": 72,
+      "value": 0.6003846153846154,
+      "params": {
+        "n_bins": 36,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": true
+      }
+    },
+    {
+      "number": 73,
+      "value": 0.8183333333333334,
+      "params": {
+        "n_bins": 42,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": true
+      }
+    },
+    {
+      "number": 74,
+      "value": 0.61,
+      "params": {
+        "n_bins": 47,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": true
+      }
+    },
+    {
+      "number": 75,
+      "value": 0.5564285714285714,
+      "params": {
+        "n_bins": 24,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": true
+      }
+    },
+    {
+      "number": 76,
+      "value": 0.49,
+      "params": {
+        "n_bins": 6,
+        "bin_strategy": "uniform",
+        "use_cosine": false,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": true,
+        "use_dice": false
+      }
+    },
+    {
+      "number": 77,
+      "value": 0.615,
+      "params": {
+        "n_bins": 39,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": false
+      }
+    },
+    {
+      "number": 78,
+      "value": 0.6849999999999999,
+      "params": {
+        "n_bins": 18,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": true
+      }
+    },
+    {
+      "number": 79,
+      "value": 0.3887823834196891,
+      "params": {
+        "n_bins": 31,
+        "bin_strategy": "quantile",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": false,
+        "use_overlap": false,
+        "use_dice": false
+      }
+    },
+    {
+      "number": 80,
+      "value": 0.5689473684210526,
+      "params": {
+        "n_bins": 44,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": false
+      }
+    },
+    {
+      "number": 81,
+      "value": 0.61,
+      "params": {
+        "n_bins": 47,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": true
+      }
+    },
+    {
+      "number": 82,
+      "value": 0.985,
+      "params": {
+        "n_bins": 45,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": true
+      }
+    },
+    {
+      "number": 83,
+      "value": 0.6849999999999999,
+      "params": {
+        "n_bins": 9,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": true
+      }
+    },
+    {
+      "number": 84,
+      "value": 0.485,
+      "params": {
+        "n_bins": 34,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": true
+      }
+    },
+    {
+      "number": 85,
+      "value": 0.6003846153846154,
+      "params": {
+        "n_bins": 50,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": true
+      }
+    },
+    {
+      "number": 86,
+      "value": 0.7042857142857143,
+      "params": {
+        "n_bins": 42,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": false
+      }
+    },
+    {
+      "number": 87,
+      "value": 0.4040909090909091,
+      "params": {
+        "n_bins": 16,
+        "bin_strategy": "uniform",
+        "use_cosine": false,
+        "use_euclidean": false,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": true
+      }
+    },
+    {
+      "number": 88,
+      "value": 0.74,
+      "params": {
+        "n_bins": 19,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": false,
+        "use_overlap": true,
+        "use_dice": false
+      }
+    },
+    {
+      "number": 89,
+      "value": 0.6516666666666666,
+      "params": {
+        "n_bins": 21,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": true
+      }
+    },
+    {
+      "number": 90,
+      "value": 0.369746835443038,
+      "params": {
+        "n_bins": 23,
+        "bin_strategy": "quantile",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": false
+      }
+    },
+    {
+      "number": 91,
+      "value": 0.985,
+      "params": {
+        "n_bins": 45,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": true
+      }
+    },
+    {
+      "number": 92,
+      "value": 0.5564285714285714,
+      "params": {
+        "n_bins": 44,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": true
+      }
+    },
+    {
+      "number": 93,
+      "value": 0.61,
+      "params": {
+        "n_bins": 47,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": true
+      }
+    },
+    {
+      "number": 94,
+      "value": 0.6003846153846154,
+      "params": {
+        "n_bins": 36,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": true
+      }
+    },
+    {
+      "number": 95,
+      "value": 0.6516666666666666,
+      "params": {
+        "n_bins": 39,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": true
+      }
+    },
+    {
+      "number": 96,
+      "value": 0.6003846153846154,
+      "params": {
+        "n_bins": 50,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": true
+      }
+    },
+    {
+      "number": 97,
+      "value": 0.5283333333333333,
+      "params": {
+        "n_bins": 42,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": false,
+        "use_overlap": false,
+        "use_dice": false
+      }
+    },
+    {
+      "number": 98,
+      "value": 0.6516666666666666,
+      "params": {
+        "n_bins": 21,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": true,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": true
+      }
+    },
+    {
+      "number": 99,
+      "value": 0.46558823529411764,
+      "params": {
+        "n_bins": 17,
+        "bin_strategy": "uniform",
+        "use_cosine": true,
+        "use_euclidean": false,
+        "use_jaccard": true,
+        "use_overlap": false,
+        "use_dice": false
+      }
+    }
+  ]
+}

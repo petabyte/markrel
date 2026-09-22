@@ -445,6 +445,40 @@ P(Relevant):    0.05    0.12    0.35    0.68    0.89    0.95
 | 🤖 **Chatbot Responses** | Select best response from candidates |
 | ⚡ **Real-time Filtering** | High-throughput with low latency |
 
+---
+
+## 🔗 Calibrating External Scorers (e.g. Jev)
+
+[#-calibrating-external-scorers-eg-jev](#-calibrating-external-scorers-eg-jev)
+
+If you're using an external relevance judge — an LLM-based reranker like Jev,
+a cross-encoder, or any model that outputs a probability — that probability
+is calibrated to *its own* judgment task, not to your domain's actual base
+rate. `JevCalibrator` reuses markrel's bin-based Markov chain to learn a
+recalibration curve, `P(actually relevant | external score)`, fit against
+your own ground-truth labels:
+
+```python
+from markrel.integrations import JevCalibrator
+
+# jev_probs: raw P(relevant) from an external scorer, per training pair
+# labels: independent ground-truth relevance labels for the same pairs
+cal = JevCalibrator(n_bins=20, bin_strategy="quantile")
+cal.fit(jev_probs, labels)
+
+# Recalibrated probability for a new score
+cal.predict_proba([0.83])
+```
+
+It can also combine the recalibrated score with a markrel embedding-based
+`MarkovRelevanceModel` using the same Bayesian odds-product logic markrel
+uses internally to combine its own metrics — useful as a cheap first-pass
+filter that only escalates borderline cases to the external scorer.
+
+**Note:** the labels used to fit `JevCalibrator` must be independent of the
+scorer being calibrated (e.g. human review, click-through data). Calibrating
+a scorer against labels it produced itself just reproduces the scorer.
+
 ### ❌ Limitations
 
 | Limitation | Solution |

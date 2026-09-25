@@ -29,6 +29,7 @@
 - [🎨 How It Works](#-how-it-works)
 - [✅ Advantages & Use Cases](#-advantages--use-cases)
 - [❌ Limitations](#-limitations)
+- [🔗 Calibrating External Scorers](#-calibrating-external-scorers-eg-jev)
 - [📖 API Reference](#-api-reference)
 - [📄 License](#-license)
 
@@ -445,11 +446,18 @@ P(Relevant):    0.05    0.12    0.35    0.68    0.89    0.95
 | 🤖 **Chatbot Responses** | Select best response from candidates |
 | ⚡ **Real-time Filtering** | High-throughput with low latency |
 
+### ❌ Limitations
+
+| Limitation | Solution |
+|------------|----------|
+| Requires labeled data | Use transfer learning or synthetic labels |
+| Class imbalance | Use Recall-optimized config for rare positives |
+| No native ranking | Pair with BM25 for initial retrieval |
+| Single-pair only | Use cross-encoders for document sets |
+
 ---
 
 ## 🔗 Calibrating External Scorers (e.g. Jev)
-
-[#-calibrating-external-scorers-eg-jev](#-calibrating-external-scorers-eg-jev)
 
 If you're using an external relevance judge — an LLM-based reranker like Jev,
 a cross-encoder, or any model that outputs a probability — that probability
@@ -479,14 +487,7 @@ filter that only escalates borderline cases to the external scorer.
 scorer being calibrated (e.g. human review, click-through data). Calibrating
 a scorer against labels it produced itself just reproduces the scorer.
 
-### ❌ Limitations
-
-| Limitation | Solution |
-|------------|----------|
-| Requires labeled data | Use transfer learning or synthetic labels |
-| Class imbalance | Use Recall-optimized config for rare positives |
-| No native ranking | Pair with BM25 for initial retrieval |
-| Single-pair only | Use cross-encoders for document sets |
+Full walkthrough, API table, and cascade example: [docs/jev-calibrator.md](docs/jev-calibrator.md).
 
 ---
 

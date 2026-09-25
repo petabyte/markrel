@@ -23,6 +23,7 @@
             <a href="#features">Features</a>
             <a href="#benchmarks">Benchmarks</a>
             <a href="#quickstart">Quick Start</a>
+            <a href="#calibration">Calibration</a>
             <a href="https://github.com/petabyte/markrel" target="_blank" class="btn-github">
                 <svg height="20" viewBox="0 0 16 16" width="20"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
                 GitHub
@@ -78,6 +79,11 @@
                 <div class="feature-icon">🧩</div>
                 <h3>Embedding Agnostic</h3>
                 <p>Works with BERT, OpenAI, sentence-transformers, or TF-IDF. Use the embeddings that work best for you.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔗</div>
+                <h3>Calibrates External Scorers</h3>
+                <p><code>JevCalibrator</code> recalibrates an LLM judge or cross-encoder to your domain's true base rate — same bins, same interpretability. <a href="#calibration">See how</a>.</p>
             </div>
         </div>
     </section>
@@ -224,6 +230,30 @@ model.fit(query_emb, doc_emb, [<span class="number">1</span>])</code></pre>
                 <div class="arch-desc">Relevance Score</div>
             </div>
         </div>
+    </section>
+
+    <section id="calibration" class="architecture">
+        <h2>Calibrate External Scorers</h2>
+        <p class="benchmark-intro">An LLM judge like Jev is calibrated to its own question, not to your domain's base rate.<br><code>JevCalibrator</code> learns P(actually relevant | external score) from your labels.</p>
+
+        <div class="code-example">
+            <div class="code-header">
+                <span class="code-tab active">JevCalibrator</span>
+            </div>
+            <pre><code><span class="keyword">from</span> markrel.integrations <span class="keyword">import</span> JevCalibrator
+
+<span class="comment"># jev_probs: raw P(relevant) from the external scorer</span>
+<span class="comment"># labels: ground truth the scorer did NOT produce</span>
+cal = JevCalibrator(n_bins=<span class="number">20</span>, bin_strategy=<span class="string">"quantile"</span>)
+cal.fit(jev_probs, labels)
+
+cal.predict_proba([<span class="number">0.83</span>])
+<span class="comment"># [0.61]  <- Jev said 0.83; this domain hits ~61% there</span>
+
+cal.summary()   <span class="comment"># per-bin: raw range vs. true rate</span></code></pre>
+        </div>
+
+        <p class="benchmark-intro">Fits on scores alone — no text, no embeddings, no retraining of the scorer.<br><a href="https://github.com/petabyte/markrel/blob/master/docs/jev-calibrator.md">Full guide →</a></p>
     </section>
 
     <section class="use-cases">
